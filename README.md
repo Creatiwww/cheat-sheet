@@ -37,6 +37,9 @@ kubectl delete all --all
 #HOW TO RUN minikube
 minikube start --vm-driver=kvm2
 
+#GIT
+git push https://ghp_<tocken>@github.com/creatiwww/<repository>.git
+
 #HOW TO INSTALL GO
 исналировать go
 - скачать с офф сайта https://golang.org/doc/install
