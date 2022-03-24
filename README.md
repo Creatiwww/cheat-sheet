@@ -37,6 +37,7 @@ kubectl delete all --all
 #HOW TO RUN minikube
 minikube delete
 minikube start --vm-driver=kvm2
+               --vm-driver=docker
 
 
 #GIT
