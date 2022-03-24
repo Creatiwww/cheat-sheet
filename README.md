@@ -31,6 +31,7 @@ docker-compose config
 docker-compose up --build -d
 
 #KUBECTL
+kubectl config use-context minikube
 kubectl get all
 kubectl delete all --all
 
@@ -38,8 +39,7 @@ kubectl delete all --all
 minikube delete
 minikube start --vm-driver=kvm2
                --vm-driver=docker
-
-
+              
 #GIT
 git push https://ghp_<tocken>@github.com/creatiwww/<repository>.git
 
