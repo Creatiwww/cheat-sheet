@@ -35,6 +35,9 @@ kubectl config use-context minikube
 kubectl get all
 kubectl delete all --all
 
+# enter running container
+kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
+
 #HOW TO RUN minikube
 minikube delete
 minikube start --vm-driver=kvm2
