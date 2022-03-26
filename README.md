@@ -1,10 +1,10 @@
 # cheat-sheet
 ```
 #GO
+go mod init hello - инициализировать проект
 go get - выкачать зависимости
 go run main.go - запустить
-go mod init hello - инициализировать проект
-go build . - собрать проект
+go build . - собрать проект в исполняемый файл
 
 #DOCKER
 docker build --tag creatiwww/devops_test_faraway:latest .
