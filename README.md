@@ -42,7 +42,8 @@ kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
 minikube delete
 minikube start --vm-driver=kvm2
                --vm-driver=docker
-              
+minikube addons enable ingress               
+ 
 #GIT
 git push https://ghp_<tocken>@github.com/creatiwww/<repository>.git
 
