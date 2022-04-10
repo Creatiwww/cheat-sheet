@@ -60,7 +60,6 @@ https://grafana.com/api/dashboards/6671/revisions/2/download  # import go dash
 
 #GENERATE LOADS
 for i in {1..100}; do curl http://localhost:8080; done
-```
 
 #GIT
 git push https://ghp_<tocken>@github.com/creatiwww/<repository>.git
@@ -72,3 +71,5 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Creatiwww/tf.git
 git push -u origin main
+
+```
