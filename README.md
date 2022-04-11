@@ -26,6 +26,9 @@ docker network create cross-network
 docker network prune -f
 sudo docker inspect ecb4 -f "{{json .NetworkSettings.Networks }}"
 
+#TERRAFORM
+terraform taint module.jenkins_master.aws_instance.instance
+
 #DOCKER-COMPOSE
 docker-compose config
 docker-compose up --build -d
