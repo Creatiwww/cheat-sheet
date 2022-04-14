@@ -39,6 +39,8 @@ docker-compose up --build -d
 kubectl config use-context minikube
 kubectl get all
 kubectl delete all --all
+# configure kubectl context with AWS EKS K8s cluster
+aws eks update-kubeconfig --name <eks_cluster_name>
 
 # enter running container
 kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
