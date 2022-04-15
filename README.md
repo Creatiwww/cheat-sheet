@@ -45,6 +45,9 @@ aws eks update-kubeconfig --name <eks_cluster_name>
 # enter running container
 kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
 
+#HELM
+helm search repo jenkinsci
+
 #HOW TO RUN minikube
 minikube delete
 minikube start --vm-driver=kvm2
