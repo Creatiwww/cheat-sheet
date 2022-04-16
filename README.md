@@ -47,7 +47,9 @@ kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
 
 #HELM
 helm search repo jenkinsci
+helm install jenkins -n jenkins -f jenkins-values.yaml jenkinsci/jenkins
 helm list --all-namespaces
+helm uninstall jenkins -n jenkins
 
 #HOW TO RUN minikube
 minikube delete
