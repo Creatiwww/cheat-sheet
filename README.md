@@ -47,6 +47,7 @@ kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
 
 #HELM
 helm search repo jenkinsci
+helm list --all-namespaces
 
 #HOW TO RUN minikube
 minikube delete
