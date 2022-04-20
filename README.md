@@ -46,7 +46,8 @@ aws eks update-kubeconfig --name <eks_cluster_name>
 kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
 
 #HELM
-helm search repo jenkinsci
+helm search repo jenkinsci # search repositories
+helm search hub kube-ops # search charts
 helm install jenkins -n jenkins -f jenkins-values.yaml jenkinsci/jenkins
 helm list --all-namespaces
 helm uninstall jenkins -n jenkins
