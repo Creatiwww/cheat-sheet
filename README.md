@@ -54,6 +54,7 @@ helm uninstall jenkins -n jenkins
 helm show values stable/kube-ops-view > values.yaml
 helm upgrade
 helm pull stable/kube-ops-view --untar # download chart files and find it by "ll | grep kube"
+helm create chart_name
 
 #HOW TO RUN minikube
 minikube delete
