@@ -50,6 +50,8 @@ helm search repo jenkinsci
 helm install jenkins -n jenkins -f jenkins-values.yaml jenkinsci/jenkins
 helm list --all-namespaces
 helm uninstall jenkins -n jenkins
+helm show
+helm upgrade
 
 #HOW TO RUN minikube
 minikube delete
