@@ -15,6 +15,7 @@ docker run -d -p 8080:8080 --name rest-server devops_test:latest
 curl localhost:8080
 docker ps
 docker stop <name of container> (-all или -a)
+docker kill $(docker ps -q) # stop all running containers
 docker exec -it c21bfac5169e sh (или /bin/bash)
 docker attach c21bfac5169e -  вывод в консоль
 docker tag devops_test_faraway:latest creatiwww/devops_test_faraway:latest
