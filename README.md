@@ -42,6 +42,7 @@ kubectl get all
 kubectl delete all --all
 # configure kubectl context with AWS EKS K8s cluster
 aws eks update-kubeconfig --name <eks_cluster_name>
+kubctl get secret secret.yaml -o yaml > secret.yaml
 
 # enter running container
 kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
