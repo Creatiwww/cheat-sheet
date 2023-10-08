@@ -44,6 +44,7 @@ kubectl delete all --all
 aws eks update-kubeconfig --name <eks_cluster_name>
 kubctl get secret secret.yaml -o yaml > secret.yaml
 kubectl apply -f manifests/ -n playground
+kubectl delete -f manifests/ -n playground
 
 # enter running container
 kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
