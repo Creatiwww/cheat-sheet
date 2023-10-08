@@ -7,7 +7,7 @@ go run main.go - запустить
 go build . - собрать проект в исполняемый файл
 
 #DOCKER
-docker build --tag creatiwww/devops_test_faraway:latest .
+docker build --tag creatiwww/devops_test_faraway:latest --platform linux/amd64 .
 docker image ls
 docker image rm devops_test:latest
 docker run devops_test:latest
@@ -43,6 +43,7 @@ kubectl delete all --all
 # configure kubectl context with AWS EKS K8s cluster
 aws eks update-kubeconfig --name <eks_cluster_name>
 kubctl get secret secret.yaml -o yaml > secret.yaml
+kubectl apply -f manifests/ -n playground
 
 # enter running container
 kubectl exec --stdin --tty devops-test-deployment-6469f9667f-4snph -- /bin/bash
